@@ -1,0 +1,331 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background:#CCCCCC;
+    overflow: hidden;
+}
+
+a, a:hover, a:active, a:visited {
+    display: block;
+    color: #000;
+}
+
+/*--header start--*/
+.header {
+    background: #FFF;
+    border-bottom: 1px solid #DDD;
+}
+
+.header .center {
+    margin: 0 auto;
+    width: 1040px;
+    height: 62px;
+}
+
+.center .logo, .center .nav, .center .login {
+    float: left;
+}
+
+.center .logo {
+    margin-left: 10px;
+    width: 160px;
+    height: 100%;
+    background: url("../img/kbs-logo.png") no-repeat left center;
+}
+
+.center .logo h1 {
+    display: none;
+}
+
+.center .login {
+    float: right;
+    margin: 17px 10px 0 0;
+    width: 46px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    background: #346aff;
+    border-radius: 2px;
+}
+
+.center .login:hover {
+    background: #265CF0;
+}
+
+/*--nav start--*/
+.nav {
+    position: relative;
+    margin-left: 60px;
+    height: 100%;
+}
+
+/*企鹅直播宣传*/
+.nav .liveQQ {
+    position: absolute;
+    top: 0;
+    right: -62px;
+    width: 62px;
+    height: 62px;
+}
+
+.nav li {
+    position: relative;
+    float: left;
+}
+
+.nav li a {
+    border-top: 4px solid transparent;
+    width: 90px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav ul li a:hover {
+    border-top-color: #346AFF;
+}
+
+.nav ul li.bg a {
+    background: #346AFF;
+    color: #FFF;
+}
+
+/*导航区域的二维码处理*/
+.qrCode {
+    z-index: 1000;
+    position: absolute;
+    top: 62px;
+    left: -15px;
+    padding: 0 14px;
+    width: 92px;
+    height: 0;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+
+    /*CSS3动画*/
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.qrCode img {
+    display: block;
+    margin-top: 18px;
+    width: 100%;
+    height: 92px;
+}
+
+.qrCode p {
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.nav li.download a:hover .qrCode {
+    height: 178px;
+}
+
+/*--content left start--*/
+.content {
+    margin: 20px auto 10px;
+    width: 1040px;
+}
+
+.menu {
+    position: relative;
+    float: left;
+    width: 198px;
+    height: 100%;
+    background: #FFF;
+    border: 1px solid #EEE;
+    overflow: hidden;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    padding-left: 24px;
+    height: 50px;
+    line-height: 50px;
+    border-left: 5px solid transparent;
+    font-size: 16px;
+}
+
+.menu li a:hover, .menu li.bg a {
+    color: #3374E0;
+    background: #EFF3FF;
+    border-left-color: #346AFF;
+}
+
+.menu li.bg a .triangle {
+    display: block;
+}
+
+/*左侧MENU中的箭头*/
+.triangle {
+    display: none;
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.triangle span {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border: 8px solid transparent;
+}
+
+.triangle .triLeft {
+    z-index: 10;
+    left: 2px;
+    border-left-color: #EFF3FF;
+}
+
+.triangle .triRight {
+    z-index: 9;
+    left: 4px;
+    border-left-color: #346AFF;
+}
+
+/*--content right start--*/
+.match {
+    float: right;
+    width: 820px;
+    height: 100%;
+}
+
+/*calendar*/
+.calendar {
+    position: relative;
+    height: 80px;
+    background: #fff;
+    border: 1px solid #EEE;
+}
+
+.caleTriLeft, .caleTriRight {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 80px;
+}
+
+.caleTriLeft {
+    left: 0;
+}
+
+.caleTriRight {
+    right: 0;
+}
+
+.caleTriLeft span, .caleTriRight span {
+    position: absolute;
+    top: 31px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border: 9px solid transparent;
+}
+
+.caleTriLeft .show {
+    z-index: 5;
+    left: -1px;
+    border-right-color: #999;
+}
+
+.caleTriLeft .cover {
+    z-index: 10;
+    left: 2px;
+    border-right-color: #fff;
+}
+
+.caleTriRight .show {
+    z-index: 5;
+    right: -1px;
+    border-left-color: #999;
+}
+
+.caleTriRight .cover {
+    z-index: 10;
+    right: 2px;
+    border-left-color: #fff;
+}
+
+/*WAPPER*/
+.wapper {
+    position: relative;
+    margin: 0 auto;
+    width: 770px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wapper ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.wapper ul li {
+    float: left;
+    margin: 5px 0;
+}
+
+.wapper ul li a {
+    padding-top: 9px;
+    width: 110px;
+    height: 61px;
+}
+
+.wapper ul li a span {
+    display: block;
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.wapper ul li.bg a, .wapper ul li a:hover {
+    color: #3374E0;
+    background: #EFF3FF;
+}
+
+/*matchList*/
+.matchList {
+    position: relative;
+    margin-top: 15px;
+    height: 90%;
+    overflow: hidden;
+}
+
+.matchInfo {
+    margin-bottom: 15px;
+    background: #FFF;
+    border: 1px solid #EEE;
+}
+
+.matchInfo h2 {
+    height: 40px;
+    line-height: 40px;
+    text-indent: 15px;
+    font-size: 16px;
+}
+
+.matchInfo ul li {
+    height: 59px;
+    line-height: 59px;
+    border-top: 1px solid #EEE;
+}

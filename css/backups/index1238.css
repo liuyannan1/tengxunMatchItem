@@ -1,0 +1,144 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background: #F4F4F4;
+    overflow: hidden;
+}
+
+a, a:hover, a:active, a:visited {
+    display: block;
+    color: #000;
+}
+
+/*--header start--*/
+.header {
+    background: #FFF;
+    border-bottom: 1px solid #DDD;
+}
+
+.header .center {
+    margin: 0 auto;
+    width: 1040px;
+    height: 62px;
+}
+
+.header .center .logo, .header .center .nav, .header .center .login {
+    float: left;
+}
+
+.header .center .logo {
+    margin-left: 10px;
+    width: 160px;
+    height: 100%;
+    background: url("../img/kbs-logo.png") no-repeat left center;
+}
+
+.header .center .logo h1 {
+    display: none;
+}
+
+.header .center .login {
+    float: right;
+    margin: 17px 10px 0 0;
+    width: 46px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    background: #346aff;
+    border-radius: 2px;
+}
+
+.header .center .login:hover {
+    background: #265CF0;
+}
+
+/*--nav start--*/
+.nav {
+    position: relative;
+    margin-left: 60px;
+    height: 100%;
+}
+
+.nav ul {
+
+}
+
+.nav ul li {
+    position: relative;
+    float: left;
+    width: 90px;
+    height: 100%;
+}
+
+.nav ul li a {
+    border-top: 4px solid transparent;
+    height: 58px;
+    line-height: 58px; /*--line-height不能写百分比的值--*/
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav ul li a:hover {
+    border-top-color: #346AFF;
+}
+
+.nav ul li.bg a {
+    background: #346AFF;
+    color: #FFF;
+}
+
+/*企鹅直播宣传*/
+.nav .liveQQ {
+    position: absolute;
+    top: 0;
+    right: -62px;
+    width: 62px;
+    height: 62px;
+}
+
+/*导航区域的二维码处理*/
+.qrCode {
+    position: absolute;
+    top: 62px;
+    left: -15px;
+    padding: 0 14px;
+    width: 92px;
+    height: 0; /*--目标值178px--*/
+    background: #fff;
+    background: rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+
+    /*CSS3动画*/
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.qrCode img {
+    display: block;
+    margin-top: 18px;
+    width: 100%;
+    height: 92px;
+}
+
+.qrCode p {
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.nav ul li.download:hover .qrCode {
+    height: 178px;
+}
+
+
+
+
+
+
+
